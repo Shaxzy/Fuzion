@@ -20,6 +20,7 @@
 #include "../Hacks/airstuck.h"
 #include "../Hacks/fakelag.h"
 #include "../Hacks/esp.h"
+#include "../Hacks/walkbot.h"
 #include "../Hacks/tracereffect.h"
 #include "../Hacks/nofall.h"
 #include "../Hacks/noCSM.h"
