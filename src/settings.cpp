@@ -478,6 +478,10 @@ void Settings::LoadDefaultsOrSave(std::string path)
 	settings[XORSTR("SkinChanger")][XORSTR("Skins")][XORSTR("enabled")] = Settings::Skinchanger::Skins::enabled;
 	settings[XORSTR("SkinChanger")][XORSTR("Models")][XORSTR("enabled")] = Settings::Skinchanger::Models::enabled;
 	settings[XORSTR("SkinChanger")][XORSTR("Skins")][XORSTR("perTeam")] = Settings::Skinchanger::Skins::perTeam;
+	
+	settings["WalkBot"]["enabled"] = Settings::WalkBot::enabled;
+	settings["WalkBot"]["autobuy"] = Settings::WalkBot::autobuy;
+ 	settings["WalkBot"]["autobuyAt"] = Settings::WalkBot::autobuyAt;
 
 	for (const auto& item: Settings::Skinchanger::skinsCT)
 	{
@@ -1045,6 +1049,10 @@ void Settings::LoadConfig(std::string path)
 	GetVal(settings[XORSTR("SkinChanger")][XORSTR("Skins")][XORSTR("enabled")], &Settings::Skinchanger::Skins::enabled);
 	GetVal(settings[XORSTR("SkinChanger")][XORSTR("Models")][XORSTR("enabled")], &Settings::Skinchanger::Models::enabled);
 	GetVal(settings[XORSTR("SkinChanger")][XORSTR("Skins")][XORSTR("perTeam")], &Settings::Skinchanger::Skins::perTeam);
+	
+	GetVal(settings["WalkBot"]["enabled"], &Settings::WalkBot::enabled);
+	GetVal(settings["WalkBot"]["autobuy"], &Settings::WalkBot::autobuy);
+	GetVal(settings["WalkBot"]["autobuyAt"], &Settings::WalkBot::autobuyAt);
 
 	GetVal(settings[XORSTR("ShowRanks")][XORSTR("enabled")], &Settings::ShowRanks::enabled);
 
