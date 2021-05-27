@@ -1041,6 +1041,14 @@ namespace Settings
         };
 	}
 
+	namespace WalkBot
+	{
+		extern bool enabled;
+		extern bool forceReset;
+		extern bool autobuy;
+		extern int autobuyAt;
+	}
+	
 	namespace ShowRanks
 	{
 		inline bool enabled = false;
